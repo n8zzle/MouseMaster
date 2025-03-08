@@ -2,7 +2,6 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "../styles/globals.css";
 import Navigation from "@/components/Navigation";
-
 import { Providers } from "../app/providers.tsx";
 
 export const metadata: Metadata = {

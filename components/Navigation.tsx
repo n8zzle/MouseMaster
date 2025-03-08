@@ -14,22 +14,17 @@ import {
   Avatar,
   Button,
 } from "@heroui/react";
-
 import {
   AcmeLogo,
   SearchIcon,
   SunFilledIcon,
   MoonFilledIcon,
 } from "../components/icons.tsx";
-
 import { ThemeSwitch } from "../components/ThemeSwitcher.tsx";
 
 export default function App() {
   return (
-    <Navbar
-      shouldHideOnScroll
-      className="bg-amber-100 p-5 justify-between items-center"
-    >
+    <Navbar shouldHideOnScroll className=" p-5 justify-between items-center ">
       <NavbarBrand>
         <Link className="flex">
           <AcmeLogo />
@@ -56,12 +51,7 @@ export default function App() {
       <NavbarContent justify="end">
         <ThemeSwitch />
         <NavbarItem className="hidden lg:flex">
-          <Link href="#">Login</Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
-            Sign Up
-          </Button>
+          <Link href="#">Logout</Link>
         </NavbarItem>
       </NavbarContent>
     </Navbar>
